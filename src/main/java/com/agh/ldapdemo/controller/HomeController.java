@@ -12,4 +12,9 @@ public class HomeController {
         return "Welcome to the home page!";
     }
 
+    @RequestMapping(value = "/logged", method = RequestMethod.GET)
+    public String logged() {
+        return "Welcome to the logged user page!";
+    }
+
 }
