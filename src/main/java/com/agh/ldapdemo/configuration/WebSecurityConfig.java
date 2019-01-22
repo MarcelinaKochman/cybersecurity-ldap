@@ -16,7 +16,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .anyRequest().fullyAuthenticated()
                 .and()
-                .formLogin();
+                .formLogin()
+                    .defaultSuccessUrl("/pageForManagers");
     }
 
     @Override
